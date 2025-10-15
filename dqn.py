@@ -19,7 +19,7 @@ class DQN(nn.Module):
 
 if __name__ == '__main__':
     state_dim = 12
-    action_dim = 2
+    action_dim = 2  # There is only two available actions: to flap wings and not to flap wings
     net = DQN(state_dim, action_dim)
     state = torch.randn(10, state_dim)
     output = net(state)

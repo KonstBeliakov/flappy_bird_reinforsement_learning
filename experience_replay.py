@@ -4,7 +4,7 @@ import random
 
 class ReplayMemory():
     def __init__(self, maximum, seed=None):
-        self.memory = deque([], maxlen=maxlen)
+        self.memory = deque([], maxlen=maximum)
 
         # seed for reproducibility
         if seed is not None:
